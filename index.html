@@ -89,12 +89,13 @@
         <img src="img/hero_section.jpeg" alt="Toddy Hero" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 hero-overlay"></div>
 
-        <nav class="relative z-30 flex justify-between items-center px-8 py-4 bg-white/90 backdrop-blur-md shadow-sm">
+        <nav class="fixed w-full z-30 flex justify-between items-center px-8 py-4 bg-white/90 backdrop-blur-md shadow-sm">
             <div class="text-2xl font-bold text-red-700 tracking-tighter italic">TODDY <span class="text-gray-400 font-light">x MARY</span></div>
             
             <ul class="hidden md:flex space-x-8 font-semibold text-stone-800 uppercase text-sm tracking-widest">
                 <li><a href="#" class="hover:text-red-600 transition">Inicio</a></li>
                 <li><a href="#colaboracion" class="hover:text-red-600 transition">Productos</a></li>
+                <li><a href="#recetario" class="hover:text-red-600 transition">Recetario</a></li>
                 <li><a href="#proveedores" class="hover:text-red-600 transition">Proveedores</a></li>
                 <li><a href="#clientes" class="hover:text-red-600 transition">Comunidad</a></li>
             </ul>
@@ -113,24 +114,25 @@
             <ul class="space-y-6 font-bold text-stone-800 uppercase text-lg">
                 <li><a href="#" class="mobile-link">Inicio</a></li>
                 <li><a href="#colaboracion" class="mobile-link">Productos</a></li>
+                <li><a href="#recetario" class="mobile-link">Recetario</a></li>
                 <li><a href="#proveedores" class="mobile-link">Proveedores</a></li>
                 <li><a href="#clientes" class="mobile-link">Comunidad</a></li>
             </ul>
         </div>
 
-        <div class="relative z-10 h-full flex flex-col justify-center px-10 md:px-24 max-w-4xl">
+        <div class="relative z-10 h-full flex flex-col justify-center px-10 md:px-24 max-w-4xl mt-4" data-aos="fade-right">
             <h1 class="text-5xl md:text-8xl text-white leading-none mb-6">EL SABOR QUE <br> <span class="text-red-500">ALIMENTA</span> DE SIEMPRE.</h1>
             <p class="text-white text-lg md:text-xl font-light max-w-xl mb-10 opacity-90 leading-snug">Mary tiene más para dar porque es ... sabor que alimenta</p>
             
             <div class="flex flex-wrap gap-4 mb-12">
                 <a href="https://www.instagram.com/gabrieeeeeeeeeeeeeeeeeell/" target="_blank" rel="noopener noreferrer"><div class="w-16 h-16 bg-gray-200 mr-4 rounded bg-[url('img/mi_ig.png')] bg-cover shrink-0"></div></a>
                 <button class="bg-[#C0A080] hover:bg-[#a88a6d] text-white px-8 md:px-10 py-4 rounded-md font-bold transition shadow-lg uppercase tracking-wider text-sm">Comprar Ahora</button>
-                <button class="border-2 border-white text-white px-8 md:px-10 py-4 rounded-md font-bold hover:bg-white hover:text-black transition uppercase tracking-wider text-sm">Recetario</button>
+                <a href="#recetario"><button class="border-2 border-white text-white px-8 md:px-10 py-4 rounded-md font-bold hover:bg-white hover:text-black transition uppercase tracking-wider text-sm">Recetario</button></a>
             </div>
         </div>
     </header>
 
-<section id="colaboracion" class="w-full h-[60vh] md:h-screen">
+<section id="colaboracion" class="w-full h-[60vh] md:h-screen" data-aos="fade-up">
     <div class="swiper mySwiper h-full">
         <div class="swiper-wrapper">
             
@@ -148,7 +150,7 @@
                 <div class="relative z-10 flex flex-col items-center justify-center w-full h-full bg-black/40 px-6 text-center">
                     <h2 class="text-4xl md:text-8xl font-black uppercase tracking-tighter mb-4 text-yellow-400">Toddy x Mary</h2>
                     <p class="text-base md:text-2xl font-light max-w-2xl leading-tight text-white">¡Combina lo mejor de Venezuela! Tus recetas favoritas con el toque perfecto.</p>
-                    <button class="mt-6 md:mt-8 px-8 md:px-10 py-3 md:py-4 bg-white text-black font-bold rounded-full transition uppercase tracking-widest text-sm md:text-base">Ver Recetas</button>
+                    <a href="#recetario"><button class="mt-6 md:mt-8 px-8 md:px-10 py-3 md:py-4 bg-white text-black font-bold rounded-full transition uppercase tracking-widest text-sm md:text-base">Ver Recetas</button></a>
                 </div>
             </div>
 
@@ -168,10 +170,10 @@
     </div>
 </section>
 
-<section id="recetas" class="py-24 bg-[#FDF6E3]">
+<section id="recetario" class="py-24 bg-[#FDF6E3]">
     <div class="container mx-auto px-6">
         
-        <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-6 text-center md:text-left">
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-6 text-center md:text-left" data-aos="fade-up">
             <div class="max-w-2xl">
                 <h2 class="text-4xl md:text-5xl font-black text-[#3D2B1F] uppercase tracking-tighter leading-tight mb-4">
                     Momentos <span class="text-red-600">Mary x Toddy</span>
@@ -185,7 +187,7 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             
-            <div class="group bg-white p-6 rounded-3xl shadow-sm border border-stone-100 hover:shadow-xl transition-all duration-300">
+            <div class="group bg-white p-6 rounded-3xl shadow-sm border border-stone-100 hover:shadow-xl transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
                 <div class="relative overflow-hidden rounded-2xl mb-6 h-48">
                     <img src="img/receta-1.jpeg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Fácil</div>
@@ -217,7 +219,7 @@
                 </div>
             </div>
 
-            <div class="group bg-white p-6 rounded-3xl shadow-sm border border-stone-100 hover:shadow-xl transition-all duration-300">
+            <div class="group bg-white p-6 rounded-3xl shadow-sm border border-stone-100 hover:shadow-xl transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
                 <div class="relative overflow-hidden rounded-2xl mb-6 h-48">
                     <img src="img/receta-2.jpeg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Rápido</div>
@@ -249,7 +251,7 @@
                 </div>
             </div>
 
-            <div class="group bg-white p-6 rounded-3xl shadow-sm border border-stone-100 hover:shadow-xl transition-all duration-300">
+            <div class="group bg-white p-6 rounded-3xl shadow-sm border border-stone-100 hover:shadow-xl transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
                 <div class="relative overflow-hidden rounded-2xl mb-6 h-48">
                     <img src="img/receta-3.jpeg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
                     <div class="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Avanzado</div>
@@ -287,7 +289,7 @@
 
     <section id="proveedores" class="py-16 bg-[#3D2B1F] text-white">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-8 opacity-60">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 opacity-60" data-aos="fade-up">
                 <h4 class="text-lg font-bold uppercase tracking-widest text-[#C0A080]">Aliados Logísticos:</h4>
                 <div class="flex flex-wrap justify-center gap-6 md:gap-12 grayscale brightness-200">
                     <span class="text-xl md:text-2xl font-black italic">EMPRESAS POLAR</span>
@@ -300,19 +302,19 @@
 
     <section id="clientes" class="py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl text-center mb-16 text-[#3D2B1F] uppercase font-black">Comunidad Toddy</h2>
+            <h2 class="text-3xl md:text-4xl text-center mb-16 text-[#3D2B1F] uppercase font-black" data-aos="fade-down">Comunidad Toddy</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-tr-[50px] rounded-bl-[50px] shadow-sm border border-stone-200 hover:shadow-md transition">
+                <div class="bg-white p-8 rounded-tr-[50px] rounded-bl-[50px] shadow-sm border border-stone-200 hover:shadow-md transition" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex text-yellow-500 mb-4 text-xs">★★★★★</div>
                     <p class="italic text-stone-700 mb-6 leading-relaxed">"Hacer las galletas Mary con Toddy es el plan favorito de mis hijos los domingos. ¡Simplemente increíble!"</p>
                     <p class="font-bold text-red-700 text-sm">— Carmen G., Caracas</p>
                 </div>
-                <div class="bg-white p-8 rounded-tr-[50px] rounded-bl-[50px] shadow-sm border border-stone-200 hover:shadow-md transition">
+                <div class="bg-white p-8 rounded-tr-[50px] rounded-bl-[50px] shadow-sm border border-stone-200 hover:shadow-md transition" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex text-yellow-500 mb-4 text-xs">★★★★★</div>
                     <p class="italic text-stone-700 mb-6 leading-relaxed">"Nunca pensé que la Harina Mary Todo Uso combinara tan bien con el cacao. Mis tortas ahora tienen otro nivel."</p>
                     <p class="font-bold text-red-700 text-sm">— Ricardo M., Valencia</p>
                 </div>
-                <div class="bg-white p-8 rounded-tr-[50px] rounded-bl-[50px] shadow-sm border border-stone-200 hover:shadow-md transition sm:col-span-2 lg:col-span-1">
+                <div class="bg-white p-8 rounded-tr-[50px] rounded-bl-[50px] shadow-sm border border-stone-200 hover:shadow-md transition sm:col-span-2 lg:col-span-1" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex text-yellow-500 mb-4 text-xs">★★★★★</div>
                     <p class="italic text-stone-700 mb-6 leading-relaxed">"La edición especial de la harina es un éxito. Súper fácil de usar y el sabor es 100% el Toddy que amamos."</p>
                     <p class="font-bold text-red-700 text-sm">— Sofía L., Maracaibo</p>
@@ -323,11 +325,11 @@
 
     <footer class="bg-[#FDF6E3] border-t border-stone-200 py-16">
         <div class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center sm:text-left">
-            <div>
+            <div data-aos="fade-up">
                 <h5 class="font-bold text-red-700 uppercase mb-4">Tradición</h5>
                 <p class="text-xs text-stone-500 leading-relaxed">Toddy y Mary representan la mesa del venezolano. Calidad garantizada en cada grano y cada gramo de cacao.</p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
                 <h5 class="font-bold text-stone-800 uppercase mb-4">Navegación</h5>
                 <ul class="text-xs space-y-2 text-stone-600 font-medium">
                     <li><a href="#">Recetario</a></li>
@@ -335,11 +337,11 @@
                     <li><a href="#">Historia</a></li>
                 </ul>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
                 <h5 class="font-bold text-stone-800 uppercase mb-4">Contacto</h5>
                 <p class="text-xs text-stone-600">info@toddy.mary.com.ve<br>Caracas, Venezuela</p>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="300">
                 <h5 class="font-bold text-stone-800 uppercase mb-4 text-center md:text-left">Siguenos</h5>
                 <div class="flex justify-center md:justify-start space-x-4 text-red-700">
                     <i class="fa-brands fa-instagram text-xl cursor-pointer"></i>
